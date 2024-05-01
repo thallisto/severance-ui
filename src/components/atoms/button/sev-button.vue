@@ -5,7 +5,7 @@ defineProps<SevButtonProps>();
 </script>
 
 <template>
-  <button>
+  <button class="bg-pink-500">
     <slot />
   </button>
 </template>

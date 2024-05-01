@@ -22,6 +22,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "severance-ui": "link:dist\\severance-ui",
     "vue": "^3.4.21"
   },
   "devDependencies": {

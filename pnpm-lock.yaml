@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      severance-ui:
+        specifier: link:dist\severance-ui
+        version: link:dist/severance-ui
       vue:
         specifier: ^3.4.21
         version: 3.4.26(typescript@5.4.5)
