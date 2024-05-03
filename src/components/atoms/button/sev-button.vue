@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { SevButtonProps } from './sev-button.types'
+import type { SevButtonProps } from './sev-button.types';
 
 defineProps<SevButtonProps>();
 </script>
