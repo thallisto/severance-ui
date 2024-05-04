@@ -1,5 +1,5 @@
+import { resolve } from 'node:path';
 import { defineConfig } from 'vite';
-import { resolve } from 'path';
 import Vue from '@vitejs/plugin-vue';
 import AutoImport from 'unplugin-auto-import/vite';
 
@@ -11,7 +11,9 @@ export default defineConfig({
       fileName: 'severance-ui',
     },
     rollupOptions: {
-      external: ['vue'],
+      external: [
+        'vue',
+      ],
       output: {
         globals: {
           vue: 'Vue',
@@ -22,7 +24,10 @@ export default defineConfig({
   plugins: [
     Vue(),
     AutoImport({
-      imports: ['vue'],
+      dts: 'src/imports.d.ts',
+      imports: [
+        'vue',
+      ],
     }),
   ],
 });

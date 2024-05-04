@@ -1,0 +1,19 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+  },
+  "editor.formatOnSave": true,
+  "eslint.experimental.useFlatConfig": true,
+  "eslint.validate": [
+    "typescript",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "yaml"
+  ],
+  "prettier.enable": false,
+  "[javascript][typescript][vue][json]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+}

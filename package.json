@@ -32,6 +32,8 @@
     "typescript": "^5.2.2",
     "unplugin-auto-import": "^0.17.5",
     "vite": "^5.2.0",
-    "vue-tsc": "^2.0.6"
+    "vue-tsc": "^2.0.6",
+    "@antfu/eslint-config": "^2.16.1",
+    "eslint": "^9.1.1"
   }
 }
