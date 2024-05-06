@@ -8,12 +8,9 @@ importers:
 
   .:
     dependencies:
-      '@types/node':
-        specifier: ^20.12.8
-        version: 20.12.8
-      severance-ui:
-        specifier: link:dist\severance-ui
-        version: link:dist/severance-ui
+      dist:
+        specifier: link:C:/Code/severance-ui/dist
+        version: link:dist
       vue:
         specifier: ^3.4.21
         version: 3.4.26(typescript@5.4.5)
@@ -21,6 +18,9 @@ importers:
       '@antfu/eslint-config':
         specifier: ^2.16.1
         version: 2.16.1(@vue/compiler-sfc@3.4.26)(eslint@9.2.0)(typescript@5.4.5)
+      '@types/node':
+        specifier: ^20.12.8
+        version: 20.12.8
       '@vitejs/plugin-vue':
         specifier: ^5.0.4
         version: 5.0.4(vite@5.2.10(@types/node@20.12.8))(vue@3.4.26(typescript@5.4.5))

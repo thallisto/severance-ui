@@ -22,12 +22,11 @@
     "lint:fix": "eslint --fix ."
   },
   "dependencies": {
-    "@types/node": "^20.12.8",
-    "severance-ui": "link:dist\\severance-ui",
     "vue": "^3.4.21"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.16.1",
+    "@types/node": "^20.12.8",
     "@vitejs/plugin-vue": "^5.0.4",
     "autoprefixer": "^10.4.19",
     "eslint": "^9.1.1",
