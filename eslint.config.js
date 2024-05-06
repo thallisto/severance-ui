@@ -74,6 +74,10 @@ export default antfu(
           ],
         },
       ],
+      'vue/component-name-in-template-casing': [
+        'error',
+        'kebab-case',
+      ],
       'vue/padding-line-between-tags': [
         'error',
       ],
