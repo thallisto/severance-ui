@@ -5,6 +5,7 @@
   "private": true,
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/severance-ui.js",
       "require": "./dist/severance-ui.umd.cjs"
     },
@@ -12,7 +13,6 @@
   },
   "main": "./dist/severance-ui.umd.cjs",
   "module": "./dist/severance-ui.js",
-  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
