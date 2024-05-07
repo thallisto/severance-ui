@@ -6,6 +6,6 @@ defineProps<SevButtonProps>();
 
 <template>
   <button class="bg-pink-500">
-    <slot />
+    {{ label }}
   </button>
 </template>

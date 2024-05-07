@@ -1,4 +1,5 @@
 export interface SevButtonProps {
+  label: string;
   kind?: SevButtonKind;
 }
 
