@@ -1,35 +1,35 @@
 import { create } from '@storybook/theming/create';
+import resolve from 'tailwindcss/resolveConfig';
+import config from '../tailwind.config';
+import logo from './assets/logo-grayscale.png';
+
+const { theme } = resolve(config);
+const { colors } = theme;
 
 export default create({
   base: 'dark',
 
-  fontBase: '"Open Sans", sans-serif',
-  fontCode: 'monospace',
-
   brandTitle: 'Thallisto',
-  brandUrl: 'https://example.com',
-  brandImage: 'https://storybook.js.org/images/placeholders/350x150.png',
-  brandTarget: '_self',
+  brandImage: logo,
 
-  colorPrimary: '#dd7826',
-  colorSecondary: '#2b65d1',
+  colorPrimary: colors.orange['500'],
+  colorSecondary: colors.blue['500'],
 
-  appBg: '#3d3d3d',
-  appContentBg: '#a15858',
-  appPreviewBg: '#5c5c5c',
-  appBorderColor: '#dd7826',
+  appBg: colors.black,
+  appContentBg: colors.gray['950'],
+  appPreviewBg: colors.gray['900'],
+  appBorderColor: colors.gray['600'],
   appBorderRadius: 4,
 
-  textColor: '#ffffff',
-  textInverseColor: '#424242',
+  textColor: colors.gray['100'],
+  textInverseColor: colors.gray['950'],
+  textMutedColor: colors.gray['400'],
 
-  barTextColor: '#ffffff',
-  barSelectedColor: '#585C6D',
-  barHoverColor: '#585C6D',
-  barBg: '#363636',
+  barBg: colors.gray['950'],
+  barTextColor: colors.gray['100'],
 
-  inputBg: '#ffffff',
-  inputBorder: '#10162F',
-  inputTextColor: '#10162F',
-  inputBorderRadius: 2,
+  inputBg: colors.gray['900'],
+  inputBorder: colors.gray['600'],
+  inputTextColor: colors.gray['100'],
+  inputBorderRadius: 4,
 });
