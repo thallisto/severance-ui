@@ -14,9 +14,6 @@
     "yaml"
   ],
   "prettier.enable": false,
-  "[json]": {
-    "files.insertFinalNewline": true
-  },
   "[javascript][typescript][vue][json][jsonc]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   }

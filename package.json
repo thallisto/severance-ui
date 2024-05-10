@@ -59,8 +59,8 @@
     "vue-tsc": "^2.0.6"
   },
   "lint-staged": {
-    "*.ts": "vue-tsc --noEmit",
-    "*.{json,js}": "pnpm lint"
+    "*": "pnpm lint",
+    "*.ts": "vue-tsc --noEmit"
   },
   "config": {
     "commitizen": {
