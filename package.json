@@ -21,13 +21,16 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "storybook": "storybook dev -p 6006",
-    "storybook:build": "storybook build"
+    "storybook:build": "storybook build",
+    "prepare": "husky"
   },
   "dependencies": {
     "vue": "^3.4.21"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.16.1",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@storybook/addon-essentials": "^8.0.10",
     "@storybook/addon-interactions": "^8.0.10",
     "@storybook/addon-links": "^8.0.10",
@@ -41,8 +44,12 @@
     "@types/node": "^20.12.8",
     "@vitejs/plugin-vue": "^5.0.4",
     "autoprefixer": "^10.4.19",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.1.1",
     "eslint-plugin-storybook": "^0.8.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "postcss": "^8.4.38",
     "storybook": "^8.0.10",
     "tailwindcss": "^3.4.3",
@@ -50,5 +57,14 @@
     "unplugin-auto-import": "^0.17.5",
     "vite": "^5.2.0",
     "vue-tsc": "^2.0.6"
+  },
+  "lint-staged": {
+    "*": "pnpm lint",
+    "*.ts": "vue-tsc --noEmit"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
